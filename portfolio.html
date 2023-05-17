@@ -9,63 +9,62 @@
   <link rel="shortcut icon" href="/assets/logos.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <style>
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
+   h5,h1,p,a {
+      font-family: Georgia, serif;
+    }
   </style>
 </head>
-<body>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="main.html">Főoldal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="merchant.html">Merchant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">WIP</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<div class="p-5 bg-primary text-white text-center" style="background-image: url(banner2.jpg);">
+<div class="p-5 bg-light text-white text-center" style="background-image: url(banner2.jpg);">
   <h1>Welcome to the Portfolio page!</h1>
   <p>Köszöntelek a weblapomon!</p> 
 </div>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="main.html">Főoldal</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="merchant.html">Merchant</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">WIP</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-sm-4">
-      
-      <hr class="d-sm-none">
+<div class="mt-5 p-5 bg-dark text-white text-center" style="margin-top: 0px;">
+  <div style="display: flex;flex-direction: row;">
+    <div>
+      <p style="text-align: left;font-size: 20px;">Copyright © Your Website 2023</p>
     </div>
-    <div class="col-sm-8">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2020</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-      <h2 class="mt-5">TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2020</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <div style="width: 300px; margin: 0px auto 0px auto;">
+      <p><a href="https://www.facebook.com/"><button type="button" class="btn btn-outline-primary"
+            style="border-radius: 100px; width: 60px;height: 60px;padding: 0px 0px 0px 0px;"><img
+              src="/assets/facebook.svg" alt="Facebook" style="width: 48px;height: 50px;filter: invert(100%);"></button></a>
+        <a href="https://twitter.com/"><button type="button" class="btn btn-outline-info"
+            style="border-radius: 100px; width: 60px;height: 60px;padding: 0px 0px 0px 0px;"><img
+              src="/assets/twitter.svg" alt="Twitter" style="width: 45px;height: 45px; filter: invert(100%);"></button></a>
+        <a href="https://www.reddit.com/"><button type="button" class="btn btn-outline-warning"
+            style="border-radius: 100px; width: 60px;height: 60px;padding: 0px 0px 0px 0px;"><img
+              src="/assets/reddit.svg" alt="Reddit" style="width: 50px;height: 50px;filter: invert(100%);"></button></a>
+      </p>
+    </div>
+    <div class="col-auto">
+      <a style="font-size: 20px;" href="https://www.privacypolicies.com/live/4c739f4b-6695-48a7-be15-1eea9c4047c0">Privacy</a>
+      <span class="mx-1">·</span>
+      <a  style="font-size: 20px;" href="https://www.privacypolicies.com/live/4c739f4b-6695-48a7-be15-1eea9c4047c0">Terms</a>
+      <span class="mx-1">·</span>
+      <a href="mailto:heropista@gmail.com" target="_blank" rel="noopener" style="font-size: 20px;">Contact</a>
+    </div>
     </div>
   </div>
-</div>
-
-<div class="mt-5 p-4 bg-dark text-white text-center">
-  <p>Footer</p>
-</div>
-
 </body>
+
 </html>
