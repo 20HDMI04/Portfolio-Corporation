@@ -185,30 +185,32 @@
   
         <div class="mt-5 p-5 bg-dark text-white text-center" id="fourthbreak">
           <h1>Vedd fel velünk a kapcsolatot!</h1>
-          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <form id="contactForm" class="was-validated">
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6">
                     <div class="form-group" style="margin: 20px;">
                         <!-- Name input-->
-                        <input class="form-control is-invalid" id="name" aria-describedby="name" type="name" placeholder="Your Name *" required/>
-                        <div id="name" class="invalid-feedback">A name is required.</div>
+                        <input type="text" class="form-control" id="validationCustom03" placeholder="Your Name *" required/>
+                        <div class="invalid-feedback">A name is required.</div>
                     </div>
                     <div class="form-group" style="margin: 20px;">
                         <!-- Email address input-->
-                        <input class="form-control is-invalid" id="email" aria-describedby="email" type="email" placeholder="Your Email *" required/>
-                        <div id="email" class="invalid-feedback">An email is required.</div>
+                        <input type="email" class="form-control" id="validationCustom03" placeholder="Your Email *" required/>
+                        <div class="invalid-feedback">An email is required or it's invalid.</div>
                     </div>
                     <div class="form-group mb-md-0" style="margin: 20px;">
                         <!-- Phone number input-->
-                        <input class="form-control is-invalid" id="tel" aria-describedby="tel" type="tel" placeholder="Your Phone *" required/>
-                        <div id="tel" class="invalid-feedback">A phone number is required.</div>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="Your Phone *" required/>
+                        <div class="invalid-feedback">A phone number is required.</div>
                     </div>
+                    
                 </div>
                 <div class="col-md-6">
                     <div class="form-group form-group-textarea mb-md-0" style="margin: 20px;">
                         <!-- Message input-->
-                        <textarea class="form-control is-invalid" id="message" aria-describedby="message" placeholder="Your Message *" required></textarea>
-                        <div id="message" class="invalid-feedback">A message is required.</div>
+                        <textarea class="form-control" type="text" id="validationCustom03" placeholder="Your Message *" required></textarea>
+                        <div class="invalid-feedback">A message is required.</div>
+                        
                         <!-- <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
                               <div id="validationServer03Feedback" class="invalid-feedback">
                                   Please provide a valid city.</div> -->
@@ -224,7 +226,7 @@
                 </div>
             </div>
             <!-- Submit Button-->
-            <div class="text-center"><button class="btn btn-dark btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+            <div class="text-center"><button class="btn btn-dark btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
         </form>
           <a href="#head"><button type="button" class="btn btn-dark bg-dark text-white text-center" style="width: 100%;"><svg xmlns="http://www.w3.org/2000/svg" width="400px" height="50px" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
