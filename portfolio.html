@@ -9,13 +9,20 @@
   <link rel="shortcut icon" href="/assets/logos.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <style>
-   h5,h1,p,a {
+  .absolutelymid {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+   h5,h1,h3,p,a {
       font-family: Georgia, serif;
     }
   </style>
 </head>
 <body class="bg-light">
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="position: fixed;width: 100%;top: 0;left: 0;z-index: 10;">
     <div class="container-fluid">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -31,12 +38,15 @@
           <a class="nav-link disabled" href="#">WIP</a>
         </li>
       </ul>
+    </nav>
+  
+  <div>
+    <img src="assets/programmer.jpg" alt="" style="filter: brightness(50%);width: 100%;top:0%;">
+      <div class="absolutelymid" style="width:100%;">
+        <h1 style="color:white;text-align: center;">Üdvözöllek a portfolio weblapon!</h1>
+        <h3  style="color:white;text-align: center;">Helló, a nevem Balogh János kezdő web developer!</h3> 
     </div>
-  </nav>
-
-<div class="p-5 bg-light text-white text-center" style="background-image: url(banner2.jpg);">
-  <h1>Welcome to the Portfolio page!</h1>
-  <p>Köszöntelek a weblapomon!</p> 
+    </div>
 </div>
 
 <div class="mt-5 p-5 bg-dark text-white text-center" style="margin-top: 0px;">
